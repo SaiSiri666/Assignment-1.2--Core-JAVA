@@ -1,0 +1,55 @@
+
+public class adding {
+	public static void main(String args[]) {
+
+		 int a = 20;
+		 int b = 10;
+		 b= a-- - --a;
+		 int c=a--;
+		 int d=a>>2;
+		 int e=a&b;
+
+		System.out.println("sub of two numbers : " + b);
+		System.out.println(" The value of c is : " + c);
+		System.out.println(" The value of d is : " + d);
+		System.out.println(" The value of e is : " + e);
+
+		}
+}
+
+
+RESULT : 
+
+ sub of two numbers : 2
+ The value of c is : 18
+ The value of d is : 4
+ The value of e is : 0
+
+Another method :
+
+If we use 'b' to declare 2 times, then it is giving error:
+
+public class adding {
+	public static void main(String args[]) {
+
+		 int a = 20;
+		 int b = 10;
+		 int b= a-- - --a;
+		 int c=a--;
+		 int d=a>>2;
+		 int e=a&b;
+
+		System.out.println("sub of two numbers : " + b);
+		System.out.println(" The value of c is : " + c);
+		System.out.println(" The value of d is : " + d);
+		System.out.println(" The value of e is : " + e);
+
+		}
+}
+
+RESULT :
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	Duplicate local variable b
+
+	at adding.main(adding.java:7)
